@@ -1,7 +1,7 @@
+import { AppBar, Toolbar, Typography } from "@mui/material";
+import React from "react";
 import "./App.css";
-import { AppBar, ListItem, Toolbar, Typography } from "@mui/material";
 import { appStyles } from "./styles";
-import { fetchAllCharacters } from "./client/fetchCharacters";
 
 function App() {
   return (
@@ -12,11 +12,7 @@ function App() {
         </Toolbar>
       </AppBar>
       <div>
-        <List>
-          {fetchAllCharacters.forEach((element) => {
-            <ListItem>{element}</ListItem>
-          })}
-        </List>
+        <CharactersList />
       </div>
     </div>
   );
