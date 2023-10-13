@@ -9,6 +9,10 @@ const toolbarStyles = {
   background: "black",
   textAlign: "center",
   color: "white",
+  minWidth: '100%',
+  marginTop: 'auto',
+  marginBottom: '0',
+  padding: '10px',
   "& a": {
     color: "white",
   },

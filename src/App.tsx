@@ -8,15 +8,13 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <header>
-        <MenuToolbar />
-      </header>
+    <div className="App">
+      <MenuToolbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/characters" element={<CharactersList />} />
       </Routes>
-      <Footer />
+        <Footer />
     </div>
   );
 }
