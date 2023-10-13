@@ -1,5 +1,4 @@
 
 export const envVariables = {
-    url: process.env.REACT_APP_URL || 'https://www.anapioficeandfire.com/api',
-
+    CHARACTERS_API_URL: process.env.REACT_APP_URL || 'https://thronesapi.com/api/v2',
 }

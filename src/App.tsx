@@ -1,19 +1,22 @@
-import { AppBar, Toolbar, Typography } from "@mui/material";
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { appStyles } from "./styles";
+import { CharactersList } from "./components/CharactersList";
+import { MenuToolbar } from "./components/MenuToolbar";
+import { Home } from "./pages/Home";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <AppBar position="static">
-        <Toolbar style={appStyles}>
-          <Typography variant="h6">Dracarys</Typography>
-        </Toolbar>
-      </AppBar>
-      <div>
-        <CharactersList />
-      </div>
+      <header>
+        <MenuToolbar />
+      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/characters" element={<CharactersList />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

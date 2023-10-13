@@ -1,5 +1,5 @@
-const appStyles = {
-    background: 'black'
-}
+const dashboard = {
+  background: "black",
+};
 
-export { appStyles };
+export { dashboard };
