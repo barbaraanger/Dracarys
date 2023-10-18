@@ -34,3 +34,17 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  width: 100%; /* Default width for small screens */
+
+  @media (min-width: 600px) {
+    width: 50%; /* Adjust for medium screens */
+  }
+
+  @media (min-width: 960px) {
+    width: 100%; /* Adjust for large screens */
+    height: 100%;
+    display: inline-block;
+  }
+}

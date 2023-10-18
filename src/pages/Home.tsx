@@ -1,20 +1,36 @@
-import { Grid } from "@mui/material";
-import React from "react";
-import BasicCard from "../components/BasicCard";
-
-const teste = {
-  title: 'teste',
-  subtitle: 'teste',
-  description: 'teste',
-  link: 'teste'
-}
+import React, { useEffect, useState } from 'react';
+import { fetchNews } from '../client/fetchNews';
+import { ArticleProps } from '../types/ArticleProps';
+import { Grid, Typography } from '@mui/material';
+import { NewsCard } from '../components';
 
 export function Home(): React.ReactElement {
-  return (
-    <Grid container style={{margin: '1vh'}}>
-      <Grid item md={3} style={{margin: '1vh', maxWidth: '445px'}}>
-        <BasicCard {...teste} />
-      </Grid>
-    </Grid>
-  );
+    const [news, setNews] = useState([]);
+
+    useEffect(() => {
+        fetchNews.then((response) => {
+            console.log(response);
+            if (response.data) {
+                const articles: ArticleProps[] = response.data.articles;
+                setNews(articles);
+                return;
+            }
+        }).catch((error) => {
+            console.log(error);
+        });
+    }, []);
+
+    return (<Grid container>
+        {
+            news
+                ?
+                news.map((article: ArticleProps) => {
+                    return <Grid item md={3} style={{ margin: '1vh', maxWidth: '445px' }} key={`${article.description}`}>
+                        <NewsCard {...article} />
+                    </Grid>;
+                })
+                :
+                <><Grid item md={5} /><Grid item md={5} padding={5}><Typography variant='h2'>Error fetching the news!</Typography></Grid></>
+        }</Grid>
+    );
 }

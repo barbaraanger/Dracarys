@@ -13,3 +13,6 @@ In the project directory, you can run:
 ### `npm run build`
 
 ### `npm run eject`
+
+## Environment Variables
+there's a env.example with the environment variables needed to run the app.

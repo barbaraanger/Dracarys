@@ -1,5 +1,6 @@
 const dashboard = {
-  background: "black",
+    background: 'black',
+    marginBottom: '1vh'
 };
 
 export { dashboard };
