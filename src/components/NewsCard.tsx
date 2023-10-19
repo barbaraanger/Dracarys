@@ -1,14 +1,10 @@
 import { Button, Card, CardActions, CardContent, Typography } from '@mui/material';
 import React from 'react';
+import { NewsCardProps } from '../types/NewsCardProps';
 import { ImageComponent } from './ImageComponent';
-export interface BasicCardProps {
-    title?: string,
-    subtitle?: string,
-    description?: string,
-    url?: string,
-    urlToImage: string
-}
-export function NewsCard(props: BasicCardProps): React.ReactElement<BasicCardProps> {
+
+
+export function NewsCard(props: NewsCardProps): React.ReactElement<NewsCardProps> {
     const { title, subtitle, description, url, urlToImage } = props;
 
     return (
