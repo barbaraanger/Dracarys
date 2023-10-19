@@ -1,8 +1,8 @@
 import { Grid } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import { fetchAllCharacters } from '../client/fetchCharacters';
 import { CharacterCard } from '../components/Characters';
 import { CharacterProps } from '../types';
-import { fetchAllCharacters } from '../client/fetchCharacters';
 
 export function Characters(): React.ReactElement {
     const [characters, setCharacters] = useState([]);
@@ -28,7 +28,7 @@ export function Characters(): React.ReactElement {
     return (
         <Grid container>
             {characters.map((character) => {
-                return <Grid item md={2} key={character.name}> <CharacterCard {...character} /> </Grid>;
+                return <Grid item md={3} key={character.name}> <CharacterCard {...character} /> </Grid>;
             })}
         </Grid>
     );

@@ -1,6 +1,6 @@
 export const cardStyles = {
     maxWidth: 345,
-    minWidth: 296,
+    minWidth: 345,
     marginTop: '1vh',
     marginLeft: '10px',
     marginBottom: '10px',

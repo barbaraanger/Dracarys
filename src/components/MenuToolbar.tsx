@@ -13,7 +13,7 @@ import {
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { dashboard } from '../styles';
-import { DragonIcon } from './icons';
+import { DragonIcon } from './Icons';
 import { MenuProps } from '../types/MenuProps';
 
 export function MenuToolbar(props: MenuProps): React.ReactElement<MenuProps> {
