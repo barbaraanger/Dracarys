@@ -7,7 +7,7 @@ export function HouseCard(props: HouseCardProps): React.ReactElement {
     return (
         <Card className="card" variant="outlined" >
             <CardContent>
-
+                
             </CardContent>
         </Card>
     );

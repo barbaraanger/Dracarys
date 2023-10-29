@@ -17,6 +17,7 @@ export function CharacterCard(character: CharacterProps): React.ReactElement {
     return (
         <Card
             sx={cardStyles}
+            id=''
         >
             <CardHeader />
             <CardMedia component="img" height="215" image={imageUrl} />
