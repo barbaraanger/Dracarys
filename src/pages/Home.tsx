@@ -5,7 +5,7 @@ import { Grid, Typography } from "@mui/material";
 import { NewsCard } from "../components";
 
 export function Home(): React.ReactElement {
-  const [news, setNews] = useState([]);
+  const [news, setNews] = useState<ArticleProps[]>([]);
 
   useEffect(() => {
     fetchNews
