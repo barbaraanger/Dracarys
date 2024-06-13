@@ -7,15 +7,24 @@
     "allowJs": true,
     "moduleResolution": "node",
     "sourceMap": true,
-    "lib": ["dom", "esnext"],
+    "lib": [
+      "dom",
+      "esnext"
+    ],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]
+      "@mui/styled-engine": [
+        "./node_modules/@mui/styled-engine-sc"
+      ]
     }
   },
   "exclude": [
     "node_modules",
     "dist",
+    "src/index.js",
+    "src/reportWebVitals.js",
+    "src/setupTests.js",
+    "webpack.config.js"
   ]
 }
