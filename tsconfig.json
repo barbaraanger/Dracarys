@@ -4,6 +4,8 @@
     "module": "esnext",
     "target": "es6",
     "jsx": "react",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "allowJs": true,
     "moduleResolution": "node",
     "sourceMap": true,
@@ -17,11 +19,6 @@
     ],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "paths": {
-      "@mui/styled-engine": [
-        "./node_modules/@mui/styled-engine-sc"
-      ]
-    }
   },
   "include": [
     "src"
