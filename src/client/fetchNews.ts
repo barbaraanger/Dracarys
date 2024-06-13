@@ -10,4 +10,4 @@ const params = {
     'language': 'en'
 };
 
-export const fetchNews = axios.get(envVariables.NEWS_API_URL, { headers, params });
+export const fetchNews = axios.get(envVariables.NEWS_API_URL || '', { headers, params });
