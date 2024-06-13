@@ -3,7 +3,7 @@
     "noImplicitAny": true,
     "module": "esnext",
     "target": "es6",
-    "jsx": "react",
+    "jsx": "preserve",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "allowJs": true,
@@ -18,7 +18,7 @@
       "esnext"
     ],
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "src"
@@ -26,7 +26,7 @@
   "exclude": [
     "node_modules",
     "dist",
-    "src/index.js",
+    "src/index.tsx",
     "src/reportWebVitals.js",
     "src/setupTests.js",
     "webpack.config.js"
