@@ -1,4 +1,3 @@
-
-export type MenuProps = {
-    pages: string[];
+export interface MenuProps {
+  pages: string[];
 }

@@ -1,4 +1,4 @@
-export type HouseCardProps = {
+export interface HouseCardProps {
     url: string,
     name: string,
     region: string,

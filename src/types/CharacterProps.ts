@@ -1,5 +1,5 @@
 
-export type CharacterProps = {
+export interface CharacterProps {
     fullName: string;
     title: string;
     family: string;
