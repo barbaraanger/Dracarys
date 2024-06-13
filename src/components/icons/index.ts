@@ -1,1 +1,1 @@
-export { DragonIcon } from "./DragonIcon";
+export * from "./DragonIcon";
