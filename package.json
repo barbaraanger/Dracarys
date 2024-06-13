@@ -13,7 +13,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "axios": "^1.5.1",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.9.5"
   },
   "engines": {
     "node": "latest"
@@ -49,10 +54,5 @@
     "@babel/plugin-transform-typescript": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "axios": "^1.5.1",
-    "react-scripts": "^5.0.1",
-    "typescript": "^4.9.5"
   }
 }
