@@ -53,6 +53,6 @@
     "@babel/core": "^7.24.7",
     "@babel/plugin-transform-typescript": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
-    "@babel/preset-typescript": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7"
   }
 }
