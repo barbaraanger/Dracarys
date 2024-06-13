@@ -1,2 +1,1 @@
-import { DragonIcon } from './DragonIcon';
-export { DragonIcon };
+export { DragonIcon } from "./DragonIcon";
