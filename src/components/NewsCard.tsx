@@ -1,7 +1,7 @@
 import { Card, CardContent, Typography } from "@mui/material";
 import React from "react";
 import { ArticleProps } from "../types";
-import { ImageComponent } from "../Components/ImageComponent";
+import { ImageComponent } from "./ImageComponent";
 
 export function NewsCard(
   props: ArticleProps

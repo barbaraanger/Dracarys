@@ -1,7 +1,8 @@
 import { Grid } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { fetchHouses } from "../client/houses";
-import { HouseCard } from "../Components";
+import { HouseCard } from "../components";
+import { HouseCardProps } from "../types";
 
 export function Houses(): React.ReactElement {
   const [houses, setHouses] = useState([]);
@@ -14,7 +15,7 @@ export function Houses(): React.ReactElement {
   }, []);
   return (
     <Grid>
-      {houses.map((house) => {
+      {houses.map((house: HouseCardProps) => {
         return <HouseCard {...house} key={house.name} />;
       })}
     </Grid>

@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { MenuToolbar, Footer, NotFound } from "./Components";
 import {
   Books,
   Characters,
@@ -17,6 +16,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import { Footer, MenuToolbar, NotFound } from "./components";
 
 function App() {
   return (

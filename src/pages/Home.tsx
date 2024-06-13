@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchNews } from "../client/fetchNews";
 import { ArticleProps } from "../types/ArticleProps";
 import { Grid, Typography } from "@mui/material";
-import { NewsCard } from "../Components";
+import { NewsCard } from "../components";
 
 export function Home(): React.ReactElement {
   const [news, setNews] = useState([]);

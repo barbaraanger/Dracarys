@@ -1,2 +1,1 @@
-import { CharacterCard } from './CharacterCard';
-export { CharacterCard };
+export { CharacterCard } from "./CharacterCard";

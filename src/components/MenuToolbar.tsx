@@ -14,7 +14,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { dashboard } from "../styles";
 import { MenuProps } from "../types/MenuProps";
-import { DragonIcon } from "./Icons/DragonIcon";
 
 export function MenuToolbar(props: MenuProps): React.ReactElement<MenuProps> {
   const { pages } = props;
@@ -35,7 +34,7 @@ export function MenuToolbar(props: MenuProps): React.ReactElement<MenuProps> {
     <AppBar position="static" style={dashboard}>
       <Container maxWidth="xl" style={{ display: "contents" }}>
         <Toolbar disableGutters>
-          <DragonIcon marginLeft={10} marginTop={10} paddingRight={2} />
+          {/* <DragonIcon marginLeft={10} marginTop={10} paddingRight={2} /> */}
           <Typography
             variant="h6"
             noWrap

@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
 
-export const DragonIcon = (style: CSSProperties) => {
+const DragonIcon = (style: CSSProperties) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -30,3 +30,5 @@ export const DragonIcon = (style: CSSProperties) => {
     </svg>
   );
 };
+
+export default DragonIcon;
