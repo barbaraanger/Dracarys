@@ -46,7 +46,6 @@
     ]
   },
   "devDependencies": {
-    "axios": "^1.5.1",
-    "@babel/plugin-proposal-private-property-in-object": "^7.0.0"
+    "axios": "^1.5.1"
   }
 }
