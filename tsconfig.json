@@ -21,7 +21,9 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "src"
+    "src/components_/**/*",
+    "src/**/*.ts",
+    "src/**/*.tsx"
   ],
   "exclude": [
     "node_modules",
