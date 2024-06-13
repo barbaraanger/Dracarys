@@ -1,15 +1,18 @@
-// webpack.config.js
-const path = require("path");
-const crypto = require("crypto");
-const crypto_orig_createHash = crypto.createHash;
-crypto.createHash = algorithm => crypto_orig_createHash(algorithm == "md4" ? "sha256" : algorithm);
+const webpack = require('webpack');
 
 module.exports = {
-    entry: "./src/",
-    resolve: {
-      fallback: {
-        path: require.resolve("path-browserify"),
-      },
-    },
-  };
-  
+  // Outras configurações do webpack...
+  resolve: {
+    fallback: {
+      crypto: require.resolve('crypto-browserify')
+    }
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    })
+  ]
+};
