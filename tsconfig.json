@@ -7,6 +7,10 @@
     "allowJs": true,
     "moduleResolution": "node",
     "sourceMap": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
     "lib": [
       "dom",
       "esnext"
@@ -19,6 +23,9 @@
       ]
     }
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
     "node_modules",
     "dist",
