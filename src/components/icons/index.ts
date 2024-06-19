@@ -1,1 +1,1 @@
-export { default as DragonIcon } from "./DragonIcon";
+export { default as DragonIcon } from './DragonIcon';

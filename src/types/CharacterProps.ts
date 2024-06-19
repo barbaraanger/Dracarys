@@ -4,4 +4,4 @@ export interface CharacterProps {
     title: string;
     family: string;
     imageUrl: string;
-};
+}
